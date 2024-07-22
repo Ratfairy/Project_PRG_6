@@ -21,6 +21,10 @@ public class DashboardAdminActivity extends AppCompatActivity {
         SparepartCard = findViewById(R.id.SparepartCARD);
         ServiceCard = findViewById(R.id.serviceCARD);
 
+        SparepartCard.setCardBackgroundColor(getResources().getColor(R.color.grey_young));
+        ServiceCard.setCardBackgroundColor(getResources().getColor(R.color.grey_young));
+
+
         // Set OnClickListener for SparepartCard
         SparepartCard.setOnClickListener(new View.OnClickListener() {
             @Override
