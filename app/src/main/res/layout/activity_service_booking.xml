@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:onClick="startDashboardServiceActivity"
+        android:src="@drawable/back"
+        />
+
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="20dp"
+        android:text="Service"
+        android:fontFamily="@font/roboto_semibold"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textVechile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="20dp"
+        android:text="             Booking"
+        android:textColor="@color/red"
+        android:fontFamily="@font/roboto_semibold"
+        android:textSize="30sp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/frame1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/text_login"
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/Add_Vehicle_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/roboto_semibold"
+            android:text="Make a service booking schedule"
+            android:textColor="@color/grey_text"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/txtchassingnumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:width="325dp"
+            android:background="@drawable/field_background"
+            android:hint="Vehicle plat number"
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:id="@+id/txtScheduleDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:width="325dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/field_background"
+            android:hint="Schedule date"
+            android:paddingLeft="15dp"
+            android:focusable="false"
+            android:clickable="true"
+            android:drawableEnd="@drawable/calendar_month"/>
+
+
+
+        <EditText
+            android:id="@+id/txtComplaint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:width="325dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/field_background"
+            android:hint="Complaint"
+            android:paddingLeft="15dp"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:maxLines="4"
+            android:gravity="top" />
+
+
+        <EditText
+            android:id="@+id/txtContact"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:width="325dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/field_background"
+            android:hint="Completeness of goods"
+            android:paddingLeft="15dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_haveAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_semibold"
+            android:text="*Optional, exp: Money Rp.10.000,- or your luggage, etc."
+            android:textColor="@color/grey_text"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRegist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="370dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/frame1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_background"
+        android:text="Booking"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

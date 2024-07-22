@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounddashboard"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.DashboardActivity">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/constraintlayout"
+            android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/Welcomename"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Hi User,"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="40dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Welcomein"
+                    android:textSize="14sp"
+                    android:layout_marginStart="18dp"
+                    android:text="Welcome in"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/Welcomename"/>
+
+                <TextView
+                    android:id="@+id/TefaService"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:text="Tefa Service"
+                    android:textColor="@color/red"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@id/Welcomein"
+                    app:layout_constraintTop_toBottomOf="@id/Welcomename" />
+
+                <TextView
+                    android:id="@+id/applicationText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:text="Aplication"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@id/TefaService"
+                    app:layout_constraintTop_toBottomOf="@id/Welcomename" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <ImageView
+            android:id="@+id/MyVechile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="218dp"
+            android:layout_marginBottom="371dp"
+            android:src="@drawable/myvechile" />
+
+        <ImageView
+            android:id="@+id/MenuService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-2dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:onClick="startDashboardServiceActivity"/>
+
+        <ImageView
+            android:id="@+id/Bckground"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="206dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="63dp"
+            android:layout_marginBottom="215dp"
+            android:src="@drawable/backgroundvechile" />
+
+
+        <ImageView
+            android:id="@+id/Bckground2"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="209dp"
+            android:layout_marginBottom="215dp"
+            android:src="@drawable/backgroundvechile" />
+
+        <ImageView
+            android:id="@+id/rectangle"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="51dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="416dp"
+            android:src="@drawable/rectangle" />
+
+        <ImageView
+            android:id="@+id/rectangle_titik"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="38dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="427dp"
+            android:src="@drawable/rectangletitik" />
+
+        <ImageView
+            android:id="@+id/btnVechile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="197dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="180dp"
+            android:layout_marginBottom="366dp"
+            android:src="@drawable/btnvechile"
+            android:onClick="startMyVehicle"
+            android:contentDescription="@string/btn_my_vehicle"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:id ="@+id/bottomNavigationView"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bottom_background"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:elevation="2dp"
+                app:menu="@menu/bottom_menu"
+                app:itemIconSize="30dp"
+                app:itemIconTint="@drawable/item_selector"
+                app:itemRippleColor="@android:color/white"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backg_login"
+    tools:context=".Activity.LogSignActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_container_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="259dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="60dp"
+        android:src="@drawable/vehicle" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/backgwhite"
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="365dp"
+        android:src="@drawable/logintext"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="43dp"
+        android:width="325dp"
+        android:background="@drawable/btn_background"
+        android:text="LOGIN"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:onClick="startLoginFragment"/>
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="195dp"
+        android:layout_marginEnd="43dp"
+        android:width="325dp"
+        android:background="@drawable/btn_background"
+        android:text="SIGN UP"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:onClick="startRegisterFragment"/>
+
+
+</RelativeLayout>

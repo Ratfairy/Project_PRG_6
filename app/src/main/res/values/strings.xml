@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TefaOtomotif</string>
+    <string name="back_button_description">Back button</string>
+    <string name="btn_my_vehicle">Button My Vehicle</string>
+    <string name="db_ip">192.168.1.1</string>
+    <string name="db_user">Oteng</string>
+    <string name="db_password">dea 12345</string>
+    <string name="db_name">DB_PRG6_TEFA</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+</resources>

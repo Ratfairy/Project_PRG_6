@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TefaOtomotif" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorOnPrimary">@color/backg_welcome</item>
+        <item name="colorOnSecondary">@color/backg_login</item>
+    </style>
+    
+    <style name="SlideActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+    </style>
+    <style name="Theme.TefaOtomotif" parent="Base.Theme.TefaOtomotif" />
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+</resources>
