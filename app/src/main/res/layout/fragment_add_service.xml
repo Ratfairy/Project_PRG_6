@@ -7,12 +7,11 @@
     tools:context=".Fragment.AddServiceFragment">
 
     <ImageView
-        android:id="@+id/back"
+        android:id="@+id/backservice1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="20dp"
-        android:onClick="startDashboardActivity"
         android:src="@drawable/back"
         android:contentDescription="@string/back_button_description" />
 
@@ -20,7 +19,7 @@
         android:id="@+id/text_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/back"
+        android:layout_below="@+id/backservice1"
         android:layout_marginTop="110dp"
         android:layout_marginLeft="20dp"
         android:text="Add"
@@ -31,7 +30,7 @@
         android:id="@+id/textVechile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/back"
+        android:layout_below="@+id/backservice1"
         android:layout_marginTop="110dp"
         android:layout_marginLeft="20dp"
         android:text="       Service"

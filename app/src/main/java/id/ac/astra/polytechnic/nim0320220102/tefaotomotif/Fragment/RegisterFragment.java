@@ -1,7 +1,5 @@
 package id.ac.astra.polytechnic.nim0320220102.tefaotomotif.Fragment;
 
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -59,7 +57,6 @@ public class RegisterFragment extends Fragment {
                 String password = edtPassword.getText().toString().trim();
                 String nama = edtNama.getText().toString().trim();
                 String nohp = edtNoHp.getText().toString().trim();
-
 
 
                 if (TextUtils.isEmpty(username) || TextUtils.isEmpty(password) || TextUtils.isEmpty(nama) || TextUtils.isEmpty(nohp)) {

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -60,6 +61,10 @@ public class LoginFragment extends Fragment {
                 String username = mEdtUsername.getText().toString().trim();
                 String password = mEdtPassword.getText().toString().trim();
 
+                if (TextUtils.isEmpty(username) || TextUtils.isEmpty(password) ) {
+                    Toast.makeText(getContext(), "All fields must be filled", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 mUserViewModel.getUserLogin(username, password);
                 observeLoginResponse();
             }
