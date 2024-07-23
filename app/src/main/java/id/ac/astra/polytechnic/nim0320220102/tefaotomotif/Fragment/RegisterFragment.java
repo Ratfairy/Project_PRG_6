@@ -102,7 +102,7 @@ public class RegisterFragment extends Fragment {
     private void navigateToLoginFragment() {
         Fragment loginFragment = new LoginFragment();
         FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
-        transaction.replace(R.id.fragment_container_main, loginFragment);
+        transaction.replace(R.id.LogSignActivity, loginFragment);
         transaction.addToBackStack(null);
         transaction.commit();
     }

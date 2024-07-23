@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backg_login"
-    tools:context=".Activity.LogSignActivity">
+    tools:context=".Activity.LogSignActivity"
+    android:id="@+id/LogSignActivity">
 
     <FrameLayout
         android:id="@+id/fragment_container_main"

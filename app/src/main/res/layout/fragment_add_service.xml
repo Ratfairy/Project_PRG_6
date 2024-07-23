@@ -66,7 +66,7 @@
             android:paddingLeft="15dp" />
 
         <EditText
-            android:id="@+id/txtSparepartPrice"
+            android:id="@+id/txtServicePrice"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:width="325dp"
@@ -76,15 +76,13 @@
             android:paddingLeft="15dp"/>
 
         <EditText
-            android:id="@+id/txtQuantity"
+            android:id="@+id/txtEstimated"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:width="325dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/field_background"
             android:hint="Estimated Time"
-            android:clickable="true"
-            android:drawableEnd="@drawable/calendar_month"
             android:paddingLeft="15dp"/>
 
 
@@ -101,7 +99,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnRegist"
+        android:id="@+id/btnAddLayanan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="370dp"
